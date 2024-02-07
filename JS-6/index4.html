@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Депозитный калькулятор</title> 
+    <link rel="stylesheet" href="./style2.css">
+     
+</head> 
+<body>
+    <div class="container"> 
+        <h2 class="title center">Депозитный калькулятор</h2> 
+        <label class="title" for="deposit">Первоначальный депозит:</label> 
+        <input class="input shadow" type="number" id="deposit" placeholder="Введите сумму вклада"> 
+        <label class="title" for="years">Срок вклада? (в годах):</label> 
+        <input class="input shadow" type="number" id="years" placeholder="Введите количество лет"> 
+        <label class="title" for="interest">Годовая процентная ставка:</label> 
+        <input class="input shadow" type="number" id="interest" placeholder="Введите процент"> 
+        <button class="btn shadow" onclick="calculate()">Рассчитать</button> 
+        <div class="result shadow">
+            <p id="result"></p> 
+        </div>
+    </div> 
+    <script src="./main3.js"></script>
+    </body> </html>

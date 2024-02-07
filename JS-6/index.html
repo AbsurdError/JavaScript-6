@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Users</title>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="title">🎮Registration🎮</h1>
+        <form action="" class="form" name="registration" onsubmit="subm(event)">
+            <div class="input-block">
+                <label for="name">😃 Name</label>
+                <input id="name" type="text" tabindex="1" class="input shadow" placeholder="Name">
+            </div>
+            <div class="input-block">
+                <label for="email">📧 Email</label>
+                <input id="email" name="email" type="email" class="input shadow" placeholder="Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-block">
+                <label for="about">💬 About me</label>
+                <textarea name="about" class="input shadow">About yourself</textarea>
+            </div>
+            <div class="input-block">
+                <label for="about">🗺️ My town</label>
+                <select name="town" class="input shadow">
+                    <option value="Elabuga" selected>Elabuga</option>
+                    <option value="Moscow">Moscow</option>
+                    <option value="Kazan">Kazan</option>
+                    <option value="Chelyabinsk">Chelyabinsk</option>
+                </select>
+            </div>
+            <div class="input2-block">
+                <input id="girl" checked type="radio" class="input" name="gender">
+                <label for="girl">Girl</label>
+            </div>
+            <div class="input2-block">
+                <input id="boy" type="radio" class="input" name="gender">
+                <label for="boy">Boy</label>
+            </div>
+            <div class="input2-block">
+                <input id="agree" checked type="checkbox" class="input" placeholder="Name">
+                <label for="agree">I agree to the processing of personal data</label>
+            </div>
+            <button type="submit" class="btn shadow">Send data</button>
+        </form>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
